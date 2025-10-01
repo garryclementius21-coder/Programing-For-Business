@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form class="Application_Form" action="" method="post">
+    <h2>Job Application Form</h2>
+
+    <label for="FullName">Full Name:</label>
+    <input class="input-text" type="text" name="FullName" id="FullName" required />
+
+    <label for="Email">Email:</label>
+    <input class="input-text" type="email" name="Email" id="Email" required />
+
+    <label for="Phone">Phone Number:</label>
+    <input class="input-text" type="tel" name="Phone" id="Phone" required />
+
+    <label for="Position">Position Applied For:</label>
+    <select class="select" name="Position" id="Position">
+      <option>-</option>
+      <option>Web Developer</option>
+      <option>UI/UX Designer</option>
+      <option>Data Analyst</option>
+      <option>Project Manager</option>
+    </select>
+
+    <label for="Experience">Years of Experience:</label>
+    <input class="input-text" type="number" name="Experience" id="Experience" min="0" />
+
+    <label for="Resume">Upload Resume (PDF only):</label>
+    <input class="input-file" type="file" name="Resume" id="Resume" accept=".pdf" />
+
+    <label>Preferred Work Type:</label>
+    <div class="work-group">
+      <input type="radio" name="WorkType" id="Remote" value="Remote"/> Remote
+      <input type="radio" name="WorkType" id="Onsite" value="Onsite"/> On-site
+      <input type="radio" name="WorkType" id="Hybrid" value="Hybrid"/> Hybrid
+    </div>
+
+    <label for="CoverLetter">Cover Letter:</label>
+    <textarea class="textarea" name="CoverLetter" id="CoverLetter" rows="5" cols="35"></textarea>
+
+    <br /><br />
+    <button class="submit">Submit Application</button>
+  </form>
+</body>
+</html>

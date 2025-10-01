@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;   
+  background-image: url(grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+
+.Application_Form {
+  width: 380px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Application_Form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Application_Form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #222;
+}
+
+.input-text,
+.select,
+.Date,
+.input-file,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input-text:focus,
+.select:focus,
+.Date:focus,
+.input-file:focus,
+.textarea:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+.work-group {
+  margin-bottom: 15px;
+}
+
+.work-group input {
+  margin-right: 6px;
+}
+
+.submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.submit:active {
+  background-color: #004080;
+  transform: translateY(0);
+}
